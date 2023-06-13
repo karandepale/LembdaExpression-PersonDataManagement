@@ -48,7 +48,7 @@ namespace PersonDataManagement
                 Console.WriteLine();
             }
 
-            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------------");
 
             // -------------------- UC3 ----------------------------
             Console.WriteLine(" All Records between the age of 13 to 18 year ");
@@ -62,9 +62,15 @@ namespace PersonDataManagement
                 Console.WriteLine();
             }
 
+            Console.WriteLine("--------------------------------------------------------------");
+
+            // ------------  UC4  ----------------------
+            Console.WriteLine("Calculate Average age");
+            double averageAge = person.CalculateAverageAge(personList);
+            Console.WriteLine("Average Age: " + averageAge);
 
 
-
+           
 
         }
 

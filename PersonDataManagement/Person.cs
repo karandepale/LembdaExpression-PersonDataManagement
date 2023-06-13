@@ -29,5 +29,12 @@ namespace PersonDataManagement
 
             return filteredPersons;
         }
+
+
+        public double CalculateAverageAge(List<Person> personList)
+        {
+            double averageAge = personList.Average(person => person.Age);
+            return averageAge;
+        }
     }
 }

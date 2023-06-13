@@ -99,8 +99,23 @@ namespace PersonDataManagement
                 Console.WriteLine();
             }
 
+            Console.WriteLine("--------------------------------------------------------------");
 
 
+
+            // ----------- UC7 -------------------------
+            Console.WriteLine("Removing Specific record in the list by the name :");
+            Console.WriteLine("Enter the name to remove: ");
+            string nameToRemove = Console.ReadLine();
+
+            List<Person> updatedPersons = person.RemovePersonByName(personList, nameToRemove);
+
+            foreach (var person5 in updatedPersons)
+            {
+                Console.WriteLine("Name: " + person5.Name);
+                Console.WriteLine("Age: " + person5.Age);
+                Console.WriteLine();
+            }
 
         }
 

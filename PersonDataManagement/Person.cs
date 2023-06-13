@@ -54,5 +54,13 @@ namespace PersonDataManagement
 
 
 
+        public List<Person> RemovePersonByName(List<Person> personList, string name)
+        {
+            var filteredPersons = personList.Where(person => !person.Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+                                            .ToList();
+
+            return filteredPersons;
+        }
+
     }
 }

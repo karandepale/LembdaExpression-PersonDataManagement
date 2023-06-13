@@ -21,12 +21,12 @@ namespace PersonDataManagement
                 new Person { SSN = "7", Name = "Atul", Address = "789 Oak St", Age = 40 }
             };
 
-            foreach (var person in personList)
+            foreach (var personn in personList)
             {
-                Console.WriteLine("SSN: " + person.SSN);
-                Console.WriteLine("Name: " + person.Name);
-                Console.WriteLine("Address: " + person.Address);
-                Console.WriteLine("Age: " + person.Age);
+                Console.WriteLine("SSN: " + personn.SSN);
+                Console.WriteLine("Name: " + personn.Name);
+                Console.WriteLine("Address: " + personn.Address);
+                Console.WriteLine("Age: " + personn.Age);
                 Console.WriteLine();
             }
 

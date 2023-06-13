@@ -21,5 +21,13 @@ namespace PersonDataManagement
 
             return filteredPersons;
         }
+
+        public List<Person> AllRecordBw13to18(List<Person> personList)
+        {
+            var filteredPersons = personList.Where(person => person.Age >= 13 && person.Age <= 18)
+                                            .ToList();
+
+            return filteredPersons;
+        }
     }
 }

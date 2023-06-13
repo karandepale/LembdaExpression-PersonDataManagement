@@ -85,6 +85,23 @@ namespace PersonDataManagement
             else
                 Console.WriteLine("The name does not exist in the list.");
 
+            Console.WriteLine("--------------------------------------------------------------");
+
+
+            // ---------------- UC6 -------------------------
+            Console.WriteLine("Skip those records whose age is lesss then 60 year");
+            List<Person> skipPerson = person.SkipBelow60(personList);
+
+            foreach (var person2 in skipPerson)
+            {
+                Console.WriteLine("Name: " + person2.Name);
+                Console.WriteLine("Age: " + person2.Age);
+                Console.WriteLine();
+            }
+
+
+
+
         }
 
     }

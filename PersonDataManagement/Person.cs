@@ -42,5 +42,17 @@ namespace PersonDataManagement
         {
             return personList.Any(person => person.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
         }
+
+
+        public List<Person> SkipBelow60(List<Person> personList)
+        {
+            var filteredPersons = personList.Where(person => person.Age >= 60)
+                                            .ToList();
+
+            return filteredPersons;
+        }
+
+
+
     }
 }

@@ -69,8 +69,21 @@ namespace PersonDataManagement
             double averageAge = person.CalculateAverageAge(personList);
             Console.WriteLine("Average Age: " + averageAge);
 
+            Console.WriteLine("--------------------------------------------------------------");
 
-           
+
+            // ----------- UC5 -------------------------
+            Console.WriteLine("Checking specific name is present or not ");
+
+            Console.WriteLine("Enter a name to check:");
+            string nameToCheck = Console.ReadLine();
+
+            bool nameExists = person.CheckNameExists(personList, nameToCheck);
+
+            if (nameExists)
+                Console.WriteLine("The name exists in the list.");
+            else
+                Console.WriteLine("The name does not exist in the list.");
 
         }
 

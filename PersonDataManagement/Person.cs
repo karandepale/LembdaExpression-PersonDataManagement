@@ -36,5 +36,11 @@ namespace PersonDataManagement
             double averageAge = personList.Average(person => person.Age);
             return averageAge;
         }
+
+
+        public bool CheckNameExists(List<Person> personList, string name)
+        {
+            return personList.Any(person => person.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        }
     }
 }
